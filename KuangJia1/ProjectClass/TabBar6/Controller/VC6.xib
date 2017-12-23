@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VC6">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIw-Vm-smC">
+                    <rect key="frame" x="51" y="46" width="269" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="pQd-Co-y1v"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hng-Pv-gDB">
+                    <rect key="frame" x="51" y="98" width="269" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="w5c-eG-Ole"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IyT-Bx-22a">
+                    <rect key="frame" x="51" y="138" width="269" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="vKh-Gr-MlK"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mF7-uV-kvH">
+                    <rect key="frame" x="51" y="276" width="269" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="C3U-8n-XlX"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jU3-dr-pY0">
+                    <rect key="frame" x="51" y="314" width="269" height="253"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mF7-uV-kvH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="58B-Kz-n7B"/>
+                <constraint firstAttribute="trailing" secondItem="NIw-Vm-smC" secondAttribute="trailing" constant="55" id="6d9-3P-wnG"/>
+                <constraint firstAttribute="trailing" secondItem="IyT-Bx-22a" secondAttribute="trailing" constant="55" id="811-Aa-hYb"/>
+                <constraint firstAttribute="trailing" secondItem="mF7-uV-kvH" secondAttribute="trailing" constant="55" id="JQM-1W-fvK"/>
+                <constraint firstItem="NIw-Vm-smC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="46" id="NDh-bq-Asq"/>
+                <constraint firstItem="jU3-dr-pY0" firstAttribute="top" secondItem="mF7-uV-kvH" secondAttribute="bottom" constant="8" id="Na9-Oz-G3u"/>
+                <constraint firstItem="NIw-Vm-smC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="Qvb-7X-CcB"/>
+                <constraint firstItem="Hng-Pv-gDB" firstAttribute="top" secondItem="NIw-Vm-smC" secondAttribute="bottom" constant="22" id="RNn-7y-rpq"/>
+                <constraint firstItem="mF7-uV-kvH" firstAttribute="top" secondItem="IyT-Bx-22a" secondAttribute="bottom" constant="10" id="cnQ-D3-Djf"/>
+                <constraint firstItem="IyT-Bx-22a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="fOK-Zi-hoy"/>
+                <constraint firstItem="Hng-Pv-gDB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="ldd-fI-0CQ"/>
+                <constraint firstAttribute="bottom" secondItem="jU3-dr-pY0" secondAttribute="bottom" constant="100" id="mJW-dl-jA9"/>
+                <constraint firstAttribute="trailing" secondItem="Hng-Pv-gDB" secondAttribute="trailing" constant="55" id="maH-Er-DKU"/>
+                <constraint firstAttribute="trailing" secondItem="jU3-dr-pY0" secondAttribute="trailing" constant="55" id="qj4-QD-UcA"/>
+                <constraint firstItem="jU3-dr-pY0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="qm8-ss-MPO"/>
+                <constraint firstItem="IyT-Bx-22a" firstAttribute="top" secondItem="Hng-Pv-gDB" secondAttribute="bottom" constant="10" id="uAd-Ss-OPp"/>
+            </constraints>
+            <point key="canvasLocation" x="6" y="46"/>
+        </view>
+    </objects>
+</document>

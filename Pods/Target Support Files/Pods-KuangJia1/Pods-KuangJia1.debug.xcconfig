@@ -1,0 +1,11 @@
+ARCHS = $(ARCHS_STANDARD)
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AMap3DMap-NO-IDFA" "${PODS_ROOT}/AMapFoundation-NO-IDFA" "${PODS_ROOT}/AMapLocation-NO-IDFA"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AMap3DMap-NO-IDFA" "${PODS_ROOT}/Headers/Public/AMapFoundation-NO-IDFA" "${PODS_ROOT}/Headers/Public/AMapLocation-NO-IDFA" "${PODS_ROOT}/Headers/Public/IQKeyboardManager" "${PODS_ROOT}/Headers/Public/PGNetworkHelper" "${PODS_ROOT}/Headers/Public/PINCache"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager" "$PODS_CONFIGURATION_BUILD_DIR/PGNetworkHelper" "$PODS_CONFIGURATION_BUILD_DIR/PINCache"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/AMap3DMap-NO-IDFA" -isystem "${PODS_ROOT}/Headers/Public/AMapFoundation-NO-IDFA" -isystem "${PODS_ROOT}/Headers/Public/AMapLocation-NO-IDFA" -isystem "${PODS_ROOT}/Headers/Public/IQKeyboardManager" -isystem "${PODS_ROOT}/Headers/Public/PGNetworkHelper" -isystem "${PODS_ROOT}/Headers/Public/PINCache"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"IQKeyboardManager" -l"PGNetworkHelper" -l"PINCache" -l"c++" -l"stdc++.6.0.9" -l"z" -framework "AMapFoundationKit" -framework "AMapLocationKit" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "CoreText" -framework "Foundation" -framework "GLKit" -framework "JavaScriptCore" -framework "MAMapKit" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

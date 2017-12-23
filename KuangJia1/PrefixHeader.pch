@@ -1,0 +1,47 @@
+
+//
+//  PrefixHeader.pch
+//  KuangJia1
+//
+//  Created by MrSong on 17/7/21.
+//  Copyright © 2017年 LanYunKeJi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "BaseViewController.h"
+#import "VC1.h"
+#import "VC2.h"
+#import "VC3.h"
+#import "VC4.h"
+#import "VC5.h"
+#import "VC6.h"
+#import "VC7.h"
+#import "MJRefresh.h"
+#import "MJChiBaoZiHeader.h"
+
+/*
+ * 网络请求类,对AFNetworking进行了优化
+ * PINCache做为AFNetworking缓存层，将AFNetworking请求的数据缓存起来,支持取消当前网络请求，以及取消所有的网络请求，除了常用的Get，Post方法，也将上传图片以及下载文件进行了封装，使用方法及其简单。
+ 
+ PGNetworkHelper屏蔽了AFNetworking自带的缓存，并将PINCache缓存的key也用MD5加密，确保数据的安全。
+ 支持同步请求
+ AFNetworking本身就带有缓存策略，为什么要使用PINCache作为缓存呢？
+ 
+ 第一，经过测试PINCache缓存比AFNetworking自带的缓存要快。
+ 第二，PINCache是将缓存数据进行了加密，更加安全。
+ */
+#import <PGNetworkHelper.h>
+
+
+// 获取RGB颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+//判断字典值是否为空
+#define SFDIC(dic,valuer) [dic objectForKey:valuer]==[NSNull null]?@"":[dic objectForKey:valuer]
+#define ImgName(a) [UIImage imageNamed:a]
+#define WIDTH CGRectGetWidth([UIScreen mainScreen].bounds)
+#define HEIGHT CGRectGetHeight([UIScreen mainScreen].bounds)
+
+#endif /* PrefixHeader_pch */
